@@ -1,0 +1,137 @@
+
+
+.block {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 450px;
+  height: 640px;
+  position: fixed;
+  left: 15px;
+  top: 95px;
+
+
+}
+.text_header{
+    text-align: center;
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+color: #212121;
+margin: 0 24px;
+margin-top: 35px;
+
+}
+.shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  
+}
+.btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  fill: black;
+
+  .svg {
+    &:hover {
+      fill: #2196f3;
+    }
+  }
+}
+.block_input {
+  padding: 0 40px;
+}
+
+.name_block {
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  .name_svg {
+    fill: black;
+  }
+  &:hover {
+    fill: #2196f3;
+    border-color: #2196f3;
+  }
+
+  input {
+    padding-left: 15px;
+    width: 370px;
+    height: 40px;
+    outline: none;
+    border: none;
+  }
+}
+.textarea {
+  margin-top: 4px;
+  width: calc(370px -32px);
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  &:hover {
+    border-color: #2196f3;
+  }
+  textarea {
+    width: 338px;
+    height: 96px;
+    outline: none;
+    border: none;
+  }
+}
+
+.checkbox_block {
+  display: flex;
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #757575;
+    margin-left: 10px;
+
+    span {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #2196f3;
+    }
+  }
+}
+.btn_last {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+ border: 0;
+ margin: auto;
+ font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+color: #ffffff;
+cursor: pointer;
+}
