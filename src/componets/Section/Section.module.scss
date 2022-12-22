@@ -7,6 +7,11 @@
   justify-content: space-around;
   margin-bottom: 30px;
   z-index: 0;
+  @media screen and (min-width:480px){
+    width: 768px;
+    height: 400px;
+    background-image: url(../../../public/img/header.png);
+  }
 }
 
 .btn {
@@ -24,6 +29,18 @@
   line-height: 30px;
   color: #ffffff;
 }
+
+
+.mainNav{
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 480px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
 .block_main {
   z-index: 1;
   display: flex;
@@ -44,6 +61,11 @@
   height: 2761px;
   background: #f5f4fa;
   padding: 0 17px;
+  @media screen and (min-width: 480px) {
+    width: 768px;
+    height: 1285px;
+  }
+
   h1 {
     font-style: normal;
     font-weight: 700;
@@ -55,6 +77,16 @@
     padding-top: 60px;
   }
 }
+.card{
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 480px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
 .block_card_person {
   h1 {
     font-weight: 700;

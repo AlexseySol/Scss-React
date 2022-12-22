@@ -1,39 +1,103 @@
-.wrapper{
-    background-color: #FFFFFF;
-    height: 60px;
-    display: flex;
-    align-items: center;
+.wrapper {
+  background-color: #ffffff;
+  height: 60px;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   width: 90%;
-  z-index: 0;
 
-}
-.burger_menu{
-    list-style: none;
-
-li{
-    width: 24px;
-    height: 3px;
-    background-color: black;
-    margin: 5px 0;
-    &:hover{
-        background-color: #2196F3;
-    }
-    
-}
-}
-.title{
+  .title {
     font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-span{
-color: #2196F3;
-}
-}
-.menu{
-    fill:black;
-    &:hover{
-        fill:#2196F3
+    font-size: 24px;
+    line-height: 28px;
+
+    span {
+      color: #2196f3;
     }
+  }
+  .menu {
+    @media screen and (min-width: 480px) {
+      display: none;
+    }
+    fill: black;
+    &:hover {
+      fill: #2196f3;
+    }
+  }
+
+  @media screen and (min-width: 481px) {
+    width: 768px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+
+.wrapper_planshet {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 481px) {
+    display: none;
+  }
+  .ul_left {
+    list-style: none;
+    display: flex;
+    margin-left: 88px;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    li {
+      cursor: pointer;
+      &:nth-of-type(1) {
+        padding: 19px 0px;
+        border-bottom: 5px solid white;
+      }
+      &:nth-of-type(2) {
+        margin-left: 51px;
+        padding: 19px 0px;
+        border-bottom: 5px solid white;
+      }
+      &:nth-of-type(3) {
+        margin-left: 51px;
+        margin-right: 25px;
+        padding: 19px 0px;
+        border-bottom: 5px solid white;
+      }
+      &:hover {
+        color: #2196f3;
+        border-bottom: 5px solid #2196f3;
+        padding: 19px 0px;
+        border-radius: 2px;
+      }
+    }
+  }
+  .ul_right {
+    list-style: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #757575;
+ 
+    li {
+      cursor: pointer;
+      svg{
+            fill: #757575; 
+            padding-right: 5px;
+      }
+
+      
+      &:hover{
+        svg{
+          fill: #2196f3;
+        }
+          
+          color: #2196f3;
+        
+      }
+    }
+  }
 }

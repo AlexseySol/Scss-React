@@ -11,7 +11,12 @@
   left: 15px;
   top: 95px;
 
-
+@media screen and (min-width: 480px) {
+  position: fixed;
+  left: 159px;
+  right: 159;
+  top: 208px;
+}
 }
 .text_header{
     text-align: center;

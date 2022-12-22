@@ -8,32 +8,47 @@ import { ReactComponent as Btn } from "./img/btn.svg";
 function Footer() {
   return (
     <div className={footer.wrapper}>
-      <div className={footer.title}>
-        <span>Web</span>Studio
+      <div className={footer.block_infoPhone_social}>
+        <div className={footer.block_infoPhone}>
+          <div className={footer.title}>
+            <span>Web</span>Studio
+          </div>
+          <div className={footer.text_map}>м. Київ, пр-т Лесі Українки, 26</div>
+          <p>
+            {" "}
+            <a href="mailto"> info@devstudio.com</a>
+          </p>
+          <p>
+            {" "}
+            <a href="tel">+38 096 111 11 11</a>{" "}
+          </p>
+        </div>
+        <div className={footer.block_social}>
+          <h3>приєднуйтесь</h3>
+          <div className={footer.svg_block}>
+            <a href="#">
+              <Inst className={footer.svg} />
+            </a>
+            <a href="#">
+              <Facebook className={footer.svg} />
+            </a>
+            <a href="#">
+              <Linkedin className={footer.svg} />
+            </a>
+            <a href="#">
+              <Twitter className={footer.svg} />
+            </a>
+          </div>
+        </div>
       </div>
-      <div className={footer.text_map}>м. Київ, пр-т Лесі Українки, 26</div>
-      <p>
-        {" "}
-        <a href="mailto"> info@devstudio.com</a>
-      </p>
-      <p>
-        {" "}
-        <a href="tel">+38 096 111 11 11</a>{" "}
-      </p>
-      <h3>приєднуйтесь</h3>
-      <div className={footer.svg_block}>
-        <a href="#">
-          <Inst className={footer.svg} />
-        </a>
-        <a href="#"><Facebook className={footer.svg} /></a> 
-        <a href="#"><Linkedin className={footer.svg} /></a> 
-        <a href="#"><Twitter className={footer.svg} /></a> 
+
+      <div className={footer.block_email}>
+        <div className={footer.title_niz}>Підпишіться на розсилку</div>
+        <input className={footer.input} placeholder="E-mail" type="email" />
+        <button className={footer.btn}>
+          <Btn />
+        </button>
       </div>
-      <div className={footer.title_niz}>Підпишіться на розсилку</div>
-      <input className={footer.input} placeholder="E-mail" type="email" />
-      <button className={footer.btn}>
-        <Btn />
-      </button>
     </div>
   );
 }

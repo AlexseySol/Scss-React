@@ -121,14 +121,20 @@ const cardPersonArray = [
           <button className={section.btn} onClick={()=>setModalIn(true)}>Замовити послугу</button>
         </div>
       </div>
-      {arrayInfo.map((arr)=>{
+      <div className={section.mainNav}>
+          {arrayInfo.map((arr)=>{
 return (<MainNav key={arr.id} {...arr} />)
       })}  
+      </div>
+    
    <div className={section.block_card}>
     <h1>Наша команда</h1>
-    {cardArray.map((card)=>{
+    <div className={section.card}>
+         {cardArray.map((card)=>{
      return <Card key={card.id} {...card} />
     })}
+    </div>
+ 
    </div>
    <div className={section.block_card_person}>
     <h1>Постійні клієнти</h1>

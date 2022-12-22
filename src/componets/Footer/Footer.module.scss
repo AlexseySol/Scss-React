@@ -6,21 +6,42 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  p {
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    width: 768px;
+    height: 464px;
+    .block_infoPhone_social {
+      display: flex;
+    } 
+    
+    .block_infoPhone {
+      margin-right: 75px;
+      text-align: center;
+    }
+    .block_social{
+      margin-left: 75px;
+    }
+    .block_email{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+  }
  
+  p {
     margin-top: 12px;
 
- 
-    a{
-        color: rgba(255, 255, 255, 0.6);  
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-
+    a {
+      color: rgba(255, 255, 255, 0.6);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-decoration: none;
     }
   }
   h3 {
@@ -62,10 +83,9 @@
   .svg {
     margin: 0 10px;
     cursor: pointer;
-    fill:white;
-    &:hover{
-        fill:   #0889f3;
-       
+    fill: white;
+    &:hover {
+      fill: #0889f3;
     }
   }
 }
@@ -103,16 +123,19 @@
   justify-content: center;
   cursor: pointer;
   margin-top: 20px;
-
 }
 .title_niz {
   margin-top: 60px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.block_email{
+  display: contents;
 }
