@@ -19,6 +19,9 @@ align-items: center;
 @media screen and (min-width: 480px) {
     width: 354px;
   } 
+  @media screen and (min-width: 48rem) {
+    width: 270px;
+  } 
 }
 .text{
     padding-left: 1rem;
@@ -29,6 +32,9 @@ line-height: 24px;
 color: #757575;
 @media screen and (min-width: 480px) {
     width: 354px;
+  } 
+  @media screen and (min-width: 48rem) {
+    width: 270px;
   } 
 
 }

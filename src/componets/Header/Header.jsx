@@ -21,11 +21,11 @@ function Header({ setIsOpen }) {
           <ul className={header.ul_right} >
             <li>
               
-              <Email /> info@devstudio.com
+              <Email /> <span>info@devstudio.com</span> 
             </li>
             <li>
           
-              <Phone /> +38 096 111 11 11
+              <Phone />  <span>+38 096 111 11 11</span> 
             </li>
           </ul>
         </div>

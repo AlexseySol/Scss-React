@@ -9,9 +9,13 @@ body {
   }
   .w{
 height:100%;
-width: 480px;
+width: 30rem;
 overflow: hidden;
-@media screen and (min-width: 480px) {
-  width: 768px
+@media screen and (min-width: 30rem) {
+  width: 48rem
+}
+
+@media screen and (min-width: 48rem) {
+  width: 100%;
 }
   }

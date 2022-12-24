@@ -44,10 +44,12 @@ function Footer() {
 
       <div className={footer.block_email}>
         <div className={footer.title_niz}>Підпишіться на розсилку</div>
+        <div className={footer.block_email_block} >
         <input className={footer.input} placeholder="E-mail" type="email" />
         <button className={footer.btn}>
           <Btn />
         </button>
+        </div>
       </div>
     </div>
   );
