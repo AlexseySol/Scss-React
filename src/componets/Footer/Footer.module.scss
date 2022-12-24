@@ -51,8 +51,12 @@
       align-items: center;
       .block_email_block{
         display: flex;
-        button{
+        flex-direction: row;
+        
+        .svg_block{
           margin-left: 5px;
+          display: flex;
+          justify-content: center;
         }
       }
     }
@@ -164,6 +168,8 @@
   text-transform: uppercase;
 }
 
-.block_email {
-  display: contents;
+.block_email_block{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
