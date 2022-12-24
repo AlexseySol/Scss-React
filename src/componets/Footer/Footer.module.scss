@@ -52,11 +52,9 @@
       .block_email_block{
         display: flex;
         flex-direction: row;
-        
-        .svg_block{
-          margin-left: 5px;
-          display: flex;
-          justify-content: center;
+
+        button{
+          margin-left: 12px;
         }
       }
     }
